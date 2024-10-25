@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #60AFFF;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between; /* Aligns Home, Search, and Other Sections */
+    align-items: center;
+    background-color: #963484;
+    font-family: "Ubuntu", serif;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps the nav on top */
+}
+
+.nav1-home {
+    font-size: 30px;
+    color: white;
+}
+
+.nav1-search {
+    flex-grow: 1; /* Makes the search bar take up more space */
+    margin: 0 20px; /* Adds space around the search bar */
+}
+
+.input-group .form-control {
+    width: 100%; /* Makes the search input fill its container */
+    height: 35px; /* Adjusts the height of the search input */
+}
+
+.input-group-text {
+    background: none; /* Removes the background of the search icon container */
+    border: none; /* Removes the border around the search icon */
+    color: white; /* Adjusts the color of the search icon */
+    margin-left: 3px; /* Add gap between box and button(search) */
+}
+
+.nav1-other-sections {
+    display: flex; 
+    gap: 30px; 
+    font-size: 25px;
+}
+
+.nav1-other-sections span {
+    color: white;
+}
