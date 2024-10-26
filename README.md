@@ -15,9 +15,6 @@ Welcome to the Product Landing Page! This project showcases an engaging and resp
 
 - **HTML**: Structure of the landing page.
 - **CSS**: Styling for a modern and clean look.
-- **JavaScript**: Interactivity and dynamic content.
-- **Frameworks**: Bootstrap or any other front-end framework (if used).
-- **Libraries**: jQuery (if applicable).
 
 ## Installation
 
