@@ -180,3 +180,61 @@ body {
         border-color: transparent;
     }
 }
+
+/* Media Query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .nav1 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav1-home {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .nav1-search {
+        margin: 10px 0;
+    }
+
+    .nav1-other-sections {
+        font-size: 1rem;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .line1 {
+        font-size: 2.5rem;
+        /* margin-top: 2.5rem; */
+    }
+
+    .line2, .line3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .nav1-home {
+        font-size: 1.2rem;
+    }
+
+    .nav1-search {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .nav1-other-sections {
+        font-size: 0.9rem;
+        gap: 5px;
+    }
+
+    .line1 {
+        font-size: 2rem;
+        margin-top: 0.8rem;
+    }
+
+    .line2, .line3 {
+        font-size: 1.2rem;
+    }
+}
