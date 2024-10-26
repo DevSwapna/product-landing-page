@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #60AFFF;
+    overflow: hidden;
 }
 
 .nav1 {
@@ -23,6 +23,11 @@ body {
 .nav1-home {
     font-size: 30px;
     color: white;
+}
+
+.nav1-home:hover {
+    color:greenyellow;
+    cursor: pointer;
 }
 
 .nav1-search {
@@ -50,4 +55,128 @@ body {
 
 .nav1-other-sections span {
     color: white;
+}
+
+.nav1-other-sections span:hover {
+    color: rgb(96, 255, 96);
+    font-weight: 500;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.section-home {
+    /* background-color: #60AFFF; */
+    background-image: url(images/section-home-img.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column; /* Stacks line1 and line2 vertically */
+    align-items: center;
+}
+
+.line1 {
+    color: yellow;
+    font-size: 100px;
+    font-family: "Oswald", sans-serif;
+    animation: slideBounceLine1 2s ease-out forwards;
+    margin-bottom: 10px; /* Space between line1 and line2 */
+    margin-top: -20px;
+}
+
+.line2 {
+    color: white;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif; /* Secondary font for contrast */
+    animation: slideBounceLine2 2s ease-out forwards;
+}
+
+.line3 {
+    color: white;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white; /* Adjust the border size for a thinner cursor */
+    display: inline-block;
+    animation: typing 3s steps(15, end) infinite, stopCursor 3s step-end infinite;
+    padding-right: 2px; /* Adds a bit of space between text and cursor */
+}
+
+.line3:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+    color: white;
+    
+}
+
+@keyframes slideBounceLine1 {
+    0% {
+        transform: translateX(-100%) translateY(0);
+        opacity: 0; /* Start hidden */
+    }
+    50% {
+        opacity: 1; /* Fade in */
+        transform: translateX(50%) translateY(-10px); /* Bounce up in the middle */
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* End position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes slideBounceLine2 {
+    0% {
+        transform: translateX(100%) translateY(0); /* Start off-screen to the right */
+        opacity: 0; /* Start hidden */
+    }
+    50% {
+        opacity: 1; /* Fade in */
+        transform: translateX(-50%) translateY(-10px); /* Bounce up in the middle */
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* End position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes slideBounceLine3 {
+    0% {
+        transform: translateX(100%) translateY(0); /* Start off-screen to the right */
+        opacity: 0; /* Start hidden */
+    }
+    50% {
+        opacity: 1; /* Fade in */
+        transform: translateX(-50%) translateY(-10px); /* Bounce up in the middle */
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* End position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Typing animation */
+@keyframes typing {
+    0%, 90% {
+        width: 0;
+    }
+    50%, 90% {
+        width: 100%;
+    }
+}
+
+/* Stops the cursor after typing completes */
+@keyframes stopCursor {
+    0%, 90% {
+        border-color: white;
+    }
+    100% {
+        border-color: transparent;
+    }
 }
